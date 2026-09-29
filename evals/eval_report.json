@@ -1,0 +1,185 @@
+{
+  "default_threshold": 0.55,
+  "embedding": {
+    "dim": 1024,
+    "seed": "0xCACE",
+    "type": "hashed"
+  },
+  "evals": {
+    "cost_reconciliation": {
+      "cost_incurred_usd": 0.00013545,
+      "est_cost_saved_usd": 0.0001716,
+      "no_cache_counterfactual_usd": 0.00030705,
+      "pass": true,
+      "records": 28,
+      "savings_rate": 0.5589
+    },
+    "determinism": {
+      "pass": true,
+      "runs_byte_identical": true
+    },
+    "exact_match_recall": {
+      "pass": true,
+      "recalled": 12,
+      "total": 12
+    },
+    "false_hit_guard": {
+      "false_hits": [],
+      "max_dissimilar_score": 0.0,
+      "pass": true,
+      "total": 12
+    },
+    "param_isolation": {
+      "cross_param_semantic_miss": true,
+      "different_temperature_miss": true,
+      "different_top_p_miss": true,
+      "pass": true,
+      "same_param_semantic_hit": true,
+      "same_params_hit": true
+    },
+    "semantic_recall": {
+      "hits": 12,
+      "min_score": 0.5843,
+      "pass": true,
+      "scores": {
+        "compose a haiku about the ocean": 0.7164,
+        "convert 100 degrees fahrenheit to celsius": 0.7846,
+        "explain compound interest simply": 0.8539,
+        "how to bake sourdough bread at home": 0.8256,
+        "number of ounces in a cup": 0.6029,
+        "steps to reset my password please": 0.7038,
+        "what causes rain to fall from clouds": 0.6576,
+        "what does machine learning mean": 0.7761,
+        "what is photosynthesis in plants": 0.6726,
+        "what is the speed of light in a vacuum": 0.7959,
+        "which city is the capital of france": 0.6861,
+        "who is the author of pride and prejudice": 0.5843
+      },
+      "total": 12
+    },
+    "threshold_sweep": {
+      "adversarial_scores": {
+        "how many ounces in a cup <-> how many grams in an ounce": 0.2981,
+        "what causes rain <-> what causes earthquakes": 0.4096,
+        "what is machine learning <-> what is reinforcement learning": 0.4575,
+        "what is the speed of light <-> what is the speed of sound": 0.4865,
+        "who wrote pride and prejudice <-> who wrote the great gatsby": 0.4016
+      },
+      "default_threshold": 0.55,
+      "operating_point": 0.55,
+      "pass": true,
+      "rows": [
+        {
+          "adversarial_false_hit_rate": 0.8,
+          "false_hit_rate": 0.0,
+          "hit_rate": 1.0,
+          "threshold": 0.3,
+          "youden_j": 1.0
+        },
+        {
+          "adversarial_false_hit_rate": 0.8,
+          "false_hit_rate": 0.0,
+          "hit_rate": 1.0,
+          "threshold": 0.35,
+          "youden_j": 1.0
+        },
+        {
+          "adversarial_false_hit_rate": 0.8,
+          "false_hit_rate": 0.0,
+          "hit_rate": 1.0,
+          "threshold": 0.4,
+          "youden_j": 1.0
+        },
+        {
+          "adversarial_false_hit_rate": 0.6,
+          "false_hit_rate": 0.0,
+          "hit_rate": 1.0,
+          "threshold": 0.45,
+          "youden_j": 1.0
+        },
+        {
+          "adversarial_false_hit_rate": 0.0,
+          "false_hit_rate": 0.0,
+          "hit_rate": 1.0,
+          "threshold": 0.5,
+          "youden_j": 1.0
+        },
+        {
+          "adversarial_false_hit_rate": 0.0,
+          "false_hit_rate": 0.0,
+          "hit_rate": 1.0,
+          "threshold": 0.55,
+          "youden_j": 1.0
+        },
+        {
+          "adversarial_false_hit_rate": 0.0,
+          "false_hit_rate": 0.0,
+          "hit_rate": 0.9167,
+          "threshold": 0.6,
+          "youden_j": 0.9167
+        },
+        {
+          "adversarial_false_hit_rate": 0.0,
+          "false_hit_rate": 0.0,
+          "hit_rate": 0.8333,
+          "threshold": 0.65,
+          "youden_j": 0.8333
+        },
+        {
+          "adversarial_false_hit_rate": 0.0,
+          "false_hit_rate": 0.0,
+          "hit_rate": 0.5833,
+          "threshold": 0.7,
+          "youden_j": 0.5833
+        },
+        {
+          "adversarial_false_hit_rate": 0.0,
+          "false_hit_rate": 0.0,
+          "hit_rate": 0.4167,
+          "threshold": 0.75,
+          "youden_j": 0.4167
+        },
+        {
+          "adversarial_false_hit_rate": 0.0,
+          "false_hit_rate": 0.0,
+          "hit_rate": 0.1667,
+          "threshold": 0.8,
+          "youden_j": 0.1667
+        },
+        {
+          "adversarial_false_hit_rate": 0.0,
+          "false_hit_rate": 0.0,
+          "hit_rate": 0.0833,
+          "threshold": 0.85,
+          "youden_j": 0.0833
+        },
+        {
+          "adversarial_false_hit_rate": 0.0,
+          "false_hit_rate": 0.0,
+          "hit_rate": 0.0,
+          "threshold": 0.9,
+          "youden_j": 0.0
+        },
+        {
+          "adversarial_false_hit_rate": 0.0,
+          "false_hit_rate": 0.0,
+          "hit_rate": 0.0,
+          "threshold": 0.95,
+          "youden_j": 0.0
+        }
+      ]
+    },
+    "ttl_lru_eviction": {
+      "lru_evicts_stale": true,
+      "lru_keeps_recent": true,
+      "pass": true,
+      "ttl_expiry_miss": true
+    }
+  },
+  "model": "gpt-4o-mini",
+  "summary": {
+    "all_pass": true,
+    "evals_passed": 8,
+    "evals_total": 8
+  }
+}
